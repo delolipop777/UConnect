@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UConnect — Foydalanuvchi Profili</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen">
+  <section id="user-profile" class="p-4 space-y-8 max-w-6xl mx-auto">
+    
+    <!-- Back Button -->
+    <div class="mb-2">
+      <button class="bg-white px-4 py-2 rounded-full shadow text-sm font-semibold text-gray-700 hover:bg-gray-50 transition">
+        <a href="index.html">🔙 Orqaga</a> 
+      </button>
+    </div>
+
+    <!-- Profile Header -->
+    <div class="flex flex-col sm:flex-row items-center justify-between bg-white p-6 rounded-xl shadow gap-4">
+      <div class="flex items-center gap-4">
+        <img src="avataaars.png" class="w-24 h-24 rounded-full" alt="Profile" />
+        <div>
+          <h2 class="text-2xl font-bold">Mohira Nuriddinova</h2>
+          <p class="text-gray-500">📍 Namangan | 🎨 Chizmachilik, Tanqidiy fikr</p>
+        </div>
+      </div>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition">
+        💬 Xabar Yuborish
+      </button>
+    </div>
+
+    <!-- GitHub Projects -->
+    <div class="bg-white p-5 rounded-xl shadow">
+      <h3 class="text-xl font-bold mb-3">📦 GitHub Loyihalari</h3>
+      <ul class="space-y-2">
+        <li class="border-l-4 border-indigo-500 pl-3">
+          <a href="https://github.com/mohira/artfolio" class="text-blue-600 font-semibold hover:underline" target="_blank">🎨 Artfolio</a>
+          <p class="text-sm text-gray-500">Shaxsiy portfolioni chizmachilik asosida tuzish uchun web ilova</p>
+        </li>
+        <li class="border-l-4 border-indigo-500 pl-3">
+          <a href="https://github.com/mohira/qissa-reader" class="text-blue-600 font-semibold hover:underline" target="_blank">📖 QissaReader</a>
+          <p class="text-sm text-gray-500">O‘zbek hikoyalarini o‘qish va izohlash uchun oddiy platforma</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Reading Progress -->
+    <div class="bg-white p-5 rounded-xl shadow">
+      <h3 class="text-xl font-bold mb-3">📚 O'qilayotgan kitoblar</h3>
+      <ul class="space-y-2">
+        <li>
+          <p><strong>“O‘tkan kunlar”</strong> — 65% o‘qilgan</p>
+          <div class="w-full bg-gray-200 h-2 rounded">
+            <div class="bg-indigo-600 h-2 rounded" style="width: 65%"></div>
+          </div>
+        </li>
+        <li>
+          <p><strong>“Ufq”</strong> — 100% tugallangan ✅</p>
+          <div class="w-full bg-gray-200 h-2 rounded">
+            <div class="bg-green-500 h-2 rounded" style="width: 100%"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Posts -->
+    <div class="bg-white p-5 rounded-xl shadow">
+      <h3 class="text-xl font-bold mb-3">📝 So‘nggi Postlar</h3>
+      <div class="space-y-3">
+        <div class="p-3 bg-gray-50 rounded shadow-sm">
+          <p><strong>“Madaniyat — bu ruhning ozuqasi.”</strong></p>
+          <p class="text-sm text-gray-500 mt-1">📅 2025-07-01</p>
+        </div>
+        <div class="p-3 bg-gray-50 rounded shadow-sm">
+          <p>“Mahallamizda bo‘lib o‘tgan ko‘rgazmadan ilhomlandim.”</p>
+          <p class="text-sm text-gray-500 mt-1">📅 2025-06-28</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Badges -->
+    <div class="bg-white p-5 rounded-xl shadow">
+      <h3 class="text-xl font-bold mb-3">🏅 Yutuqlar / Badges</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">📸 Kontent Yaratuvchi</span>
+        <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">📚 Kitobsevar</span>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">🤝 Faol A’zo</span>
+      </div>
+    </div>
+
+    <!-- Education / Degree -->
+    <div class="bg-white p-5 rounded-xl shadow">
+      <h3 class="text-xl font-bold mb-3">🎓 Ta'lim</h3>
+      <p><strong>Namangan San’at Maktabi</strong> — Tasviriy san’at bo‘yicha 2022–2025</p>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UConnect — Yoshlar Platformasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden { display: none; }
+    .nav-button {
+      transition: all 0.3s ease;
+    }
+    .nav-button:hover {
+      transform: scale(1.02);
+      text-decoration: none;
+    }
+    .card {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-indigo-800 text-white py-4 px-6">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h1 class="text-2xl font-bold">🔗 UConnect</h1>
+        <p class="text-sm mt-1">Yoshlar uchun madaniy va ijodiy networking platformasi</p>
+      </div>
+      <nav class="mt-4 sm:mt-0 flex gap-4">
+        <button onclick="showSection('main-info')" class="nav-button font-semibold">🏠 Asosiy</button>
+        <button onclick="showSection('profiles')" class="nav-button font-semibold">👥 Profillar</button>
+        <button onclick="showSection('communities')" class="nav-button font-semibold">🤝 Mahalla</button>
+        <button onclick="showSection('feed')" class="nav-button font-semibold">🎉 Madaniyat</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="p-3 space-y-8 flex-grow">
+
+    <!-- Main Info -->
+    <section id="main-info">
+      <h2 class="text-2xl font-bold mb-4">🌟 "UConnect" loyihasi haqida</h2>
+      <p class="mb-4">Bu platforma O‘zbekiston yoshlari tomonidan, O‘zbekiston yoshlari uchun yaratilgan. Madaniyat, ijodkorlik va texnologiyani uyg‘unlashtirgan ijtimoiy tarmoq.</p>
+      <h3 class="text-xl font-semibold mb-2">🔑 Asosiy imkoniyatlar:</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>🌍 Yoshlar xaritasi:</strong> Hudud va qiziqish bo‘yicha yoshlar bilan tanishing.</li>
+        <li><strong>🤝 Mini mahallalar:</strong> Qiziqishgiz asosida guruhlarga qo‘shiling.</li>
+        <li><strong>🎉 Tadbirlar va chaqiriqlar:</strong> Har hafta madaniy va ijodiy vazifalar.</li>
+        <li><strong>🧠 Madaniyat kapsulasi:</strong> Har kuni yangi kontent – vloglar, an’analar, she’rlar.</li>
+        <li><strong>🎮 Gamifikatsiya:</strong> Do‘st toping, XP to‘plang, yulduzga aylaning!</li>
+      </ul>
+      <p class="mt-4">💡 Bu shunchaki platforma emas – bu harakat! Endi networking ham ijtimoiy, ham madaniy, ham zamonaviy.</p>
+    </section>
+
+    <!-- Profiles -->
+    <section id="profiles" class="hidden">
+      <h2 class="text-xl font-bold mb-3">👥 O‘zbekiston Yoshlar Profillari</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Dilshod Qodirov</h3>
+          <p>📍 Samarqand</p>
+          <p>🎨 Qiziqishlari: Kod yozish, She’rlar, Beatbox</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Zarina Karimova</h3>
+          <p>📍 Farg‘ona</p>
+          <p>🎨 Qiziqishlari: Xattotlik, Raqs, UX Dizayn</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Javohir Ahmedov</h3>
+          <p>📍 Nukus</p>
+          <p>🎨 Qiziqishlari: Sun’iy intellekt, Texnologiyalar, Hunarmandchilik</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Gulrux Yo‘ldosheva</h3>
+          <p>📍 Qarshi</p>
+          <p>🎨 Qiziqishlari: Fotografiya, Ijtimoiy media, Psixologiya</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Azamat Jalilov</h3>
+          <p>📍 Toshkent</p>
+          <p>🎨 Qiziqishlari: Robototexnika, Innovatsiya, Debat</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Dilnoza Abdullayeva</h3>
+          <p>📍 Buxoro</p>
+          <p>🎨 Qiziqishlari: Tarix, Drama, Ovozli hikoyalar</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="font-bold text-lg">Bekzod Rustamov</h3>
+          <p>📍 Andijon</p>
+          <p>🎨 Qiziqishlari: Kiberxavfsizlik, Animatsiya, Tashkiliy ishlar</p>
+        </div>
+        <a href="profile.html">
+            <div class="card bg-white p-3 rounded-xl shadow">
+            <h3 class="font-bold text-lg">Mohira Nuriddinova</h3>
+            <p>📍 Namangan</p>
+            <p>🎨 Qiziqishlari: Chizmachilik, Haqiqatli hikoyalar, Tanqidiy fikr</p>
+        </div>
+        </a>
+        
+      </div>
+    </section>
+
+    <!-- Communities -->
+    <section id="communities" class="hidden">
+      <h2 class="text-xl font-bold mb-3">🤝 Mini Mahalla Hamjamiyatlari</h2>
+      <div class="space-y-3">
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="text-lg font-semibold">💻 Tashkent Techies</h3>
+          <p>Poytaxtdagi dasturchilar va muhandislar uchun do‘stona jamiyat</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="text-lg font-semibold">📝 Buxoro Poets</h3>
+          <p>Adabiyot va ijod ahliga Buxorodan salomlar</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="text-lg font-semibold">🍛 Plov & Poetry Club</h3>
+          <p>Osh, she’r va madaniyat — hammasi shu yerda</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="text-lg font-semibold">🎧 Audio Bloggers</h3>
+          <p>Ovozli bloglar va podcast sevuvchilar uchun joy</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <h3 class="text-lg font-semibold">🎮 Indie Game Jam</h3>
+          <p>Mustaqil o‘yin ishlab chiquvchilar uchun kreativ makon</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feed -->
+    <section id="feed" class="hidden">
+      <h2 class="text-xl font-bold mb-3">🎉 Madaniyat Kapsulasi</h2>
+      <div class="space-y-4">
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <p>🕺 “Mening Mahallam 60 soniyada” — Dilshoddan vlog</p>
+          <p class="text-sm text-gray-500 mt-1">#mahalla #uzbekistan</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <p>👗 Zarina Ferghana doppy dizaynini o‘rgatmoqda</p>
+          <p class="text-sm text-gray-500 mt-1">#uzart #an’ana</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <p>💃 Marg‘ilonda an’anaviy raqs challenge</p>
+          <p class="text-sm text-gray-500 mt-1">#dancejam #uzculture</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <p>🎥 Nukusda yoshlardan short film festival</p>
+          <p class="text-sm text-gray-500 mt-1">#cinema #youngvoices</p>
+        </div>
+        <div class="card bg-white p-3 rounded-xl shadow">
+          <p>📻 Podcastlar: O‘zbekistonlik yoshlardan hayot saboqlari</p>
+          <p class="text-sm text-gray-500 mt-1">#voiceofuzbekistan #uzpod</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-800 text-white text-center py-4">
+    <p class="text-sm">© 2025 UConnect — O‘zbekiston yoshlari tomonidan yaratilgan</p>
+  </footer>
+
+  <!-- JS to Switch Sections -->
+  <script>
+    function showSection(sectionId) {
+      const sections = ['main-info', 'profiles', 'communities', 'feed'];
+      sections.forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+      });
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
